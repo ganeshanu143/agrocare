@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stethoscope, Compass, ShoppingBag, ArrowRight, ShieldCheck, Award, Users } from 'lucide-react';
+import { Stethoscope, Compass, ShoppingBag, ArrowRight, ShieldCheck, Leaf, Calendar, Sparkles } from 'lucide-react';
 import { translations } from '../data/translations';
 
 export default function HeroSection({ setActiveTab, lang }) {
@@ -102,7 +102,7 @@ export default function HeroSection({ setActiveTab, lang }) {
       </section>
 
       {/* Main 3 Feature Cards Section */}
-      <section style={{ padding: '70px 0', background: 'var(--white)' }}>
+      <section style={{ padding: '70px 0 40px 0', background: 'var(--white)' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '650px', margin: '0 auto 50px auto' }}>
             <span className="badge badge-green" style={{ marginBottom: '12px' }}>Smart Farming Modules</span>
@@ -197,6 +197,63 @@ export default function HeroSection({ setActiveTab, lang }) {
           </div>
         </div>
       </section>
+
+      {/* NEW FEATURE: 100% ORGANIC FARMING & DAILY CROP ROUTINE BANNER */}
+      <section style={{ padding: '0 0 70px 0', background: 'var(--white)' }}>
+        <div className="container">
+          <div style={{
+            background: 'linear-gradient(135deg, var(--primary-green-subtle), var(--pink-accent-bg))',
+            border: '2px solid var(--primary-green-light)',
+            borderRadius: 'var(--radius-xl)',
+            padding: '36px',
+            boxShadow: 'var(--shadow-md)',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '30px',
+            alignItems: 'center'
+          }}>
+            <div>
+              <span className="badge badge-pink" style={{ marginBottom: '12px' }}>
+                <Sparkles size={16} /> 100% Chemical-Free Farming
+              </span>
+              <h3 style={{ fontSize: '26px', color: 'var(--primary-green-dark)', marginBottom: '10px' }}>
+                Daily Crop Routine & 100% Organic Farming Guide
+              </h3>
+              <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: 1.6, marginBottom: '20px' }}>
+                Discover step-by-step daily procedures from Day 1 land preparation until final crop cutting harvest. Learn how to grow 100% organic crops using Jeevamrutha, Panchagavya, Neem oil, and natural trap crops.
+              </p>
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => setActiveTab('crop-recommendation')}
+                >
+                  <Calendar size={18} /> View Daily Routine Schedule
+                </button>
+                <button
+                  className="btn btn-pink"
+                  onClick={() => setActiveTab('crop-recommendation')}
+                >
+                  <Leaf size={18} /> 100% Organic Farming Guide
+                </button>
+              </div>
+            </div>
+
+            <div style={{ background: 'var(--white)', padding: '24px', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-sm)' }}>
+              <div style={{ fontWeight: 800, color: 'var(--primary-green-dark)', fontSize: '16px', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Leaf className="text-primary-green" size={20} /> 5 Rules of Organic Agriculture:
+              </div>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '14px', color: 'var(--text-dark)' }}>
+                <li>🌱 <strong>1. Soil Enrichment:</strong> Jeevamrutha & Vermicompost</li>
+                <li>🛡️ <strong>2. Bio-Pest Shield:</strong> Neem Kernel Extract (NSKE 5%)</li>
+                <li>🦠 <strong>3. Bio-Fungicide:</strong> Trichoderma viride & Sour Curd</li>
+                <li>🌾 <strong>4. Natural Weeding:</strong> Paddy Straw Mulching</li>
+                <li>🌻 <strong>5. Pest Traps:</strong> Marigold Trap Crop Rows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

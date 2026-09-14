@@ -130,7 +130,41 @@ export const masterCrops = [
     difficulty: "Easy to Moderate",
     marketPotential: "High Local Demand & Daily Cashflow",
     mainRisks: "Susceptible to Leaf Blight during heavy monsoon rain.",
-    farmingReq: "Requires wooden staking support, regular weeding, and drip fertigation."
+    farmingReq: "Requires wooden staking support, regular weeding, and drip fertigation.",
+    dailyTimeline: [
+      {
+        phase: "Days 1 – 15",
+        title: "Land Preparation & Seedling Nursery",
+        routine: "Deep plough land 2-3 times. Mix 10 tons FYM + 2.5kg Trichoderma viride per acre. Sow seeds in raised nursery beds. Water lightly twice daily (8:00 AM & 5:00 PM)."
+      },
+      {
+        phase: "Days 16 – 30",
+        title: "Transplantation & Root Establishment",
+        routine: "Transplant 25-day seedlings into main field with 60cm x 45cm spacing. Drench soil with Jeevamrutha (200L/acre). Install 10 Yellow Sticky Traps per acre. Inspect young leaves daily at 7:00 AM."
+      },
+      {
+        phase: "Days 31 – 60",
+        title: "Vegetative Growth & Staking Support",
+        routine: "Apply 500kg Vermicompost per acre around root zones. Apply paddy straw mulch. Spray Panchagavya (3% solution) every 15 days. Hand weed on Day 35. Irrigate every 3-4 days based on soil moisture."
+      },
+      {
+        phase: "Days 61 – 85",
+        title: "Flowering, Fruit Set & Pest Shield",
+        routine: "Erect 5ft wooden staking poles with twine wire. Spray Neem Oil 10,000 PPM (5ml/L water) every 10 days to repel fruit borers. Spray Sour Buttermilk solution (50ml/L) against fungal spots. Check fruit firmness daily."
+      },
+      {
+        phase: "Days 86 – 110",
+        title: "Harvesting & Crop Cutting",
+        routine: "Stop heavy liquid feeds 10 days before harvest. Harvest firm pink-red tomatoes early in the morning (6:30 AM - 9:00 AM) using sharp shears. Store in shaded wooden crates."
+      }
+    ],
+    organicProtocol: {
+      soilEnrichment: "Jeevamrutha (200 L/acre bi-weekly) + Vermicompost (500 kg/acre) + Azospirillum bio-fertilizer.",
+      pestControl: "Neem Seed Kernel Extract (NSKE 5%) + Agniastra organic spray + Yellow/Blue sticky traps.",
+      diseaseControl: "Trichoderma viride bio-fungicide + Fermented Sour Curd/Milk spray (5%).",
+      weedControl: "Manual hand hoeing + 3-inch Paddy Straw mulching (zero chemical herbicides).",
+      trapCrops: "Plant 1 row of Marigold flowers for every 16 rows of tomatoes to trap fruit borer caterpillars and soil nematodes."
+    }
   },
   {
     id: "crop_paddy",
@@ -145,7 +179,41 @@ export const masterCrops = [
     difficulty: "Moderate",
     marketPotential: "Government MSP Support & High Bulk Demand",
     mainRisks: "Water shortage during panicle initiation; Stem borer pest.",
-    farmingReq: "Requires puddled field preparation, nursery transplantation, and continuous standing water."
+    farmingReq: "Requires puddled field preparation, nursery transplantation, and continuous standing water.",
+    dailyTimeline: [
+      {
+        phase: "Days 1 – 20",
+        title: "Nursery Preparation & Wet Puddling",
+        routine: "Treat seeds with Beejamrutha. Prepare wet nursery bed. Puddle main field 3 times with green manure (Dhaincha/Sunnhemp) incorporated into soil."
+      },
+      {
+        phase: "Days 21 – 45",
+        title: "Transplantation & Tiller Growth",
+        routine: "Transplant 2-3 seedlings per hill at 20cm x 15cm spacing. Maintain 2-3 cm standing water. Apply Jeevamrutha through irrigation channel every 12 days."
+      },
+      {
+        phase: "Days 46 – 80",
+        title: "Active Tillering & Panicle Initiation",
+        routine: "Apply 400kg Neem Cake powder per acre to control stem borer larvae. Release Trichogramma egg parasitoid cards (2 cards/acre). Daily water depth check."
+      },
+      {
+        phase: "Days 81 – 115",
+        title: "Flowering & Grain Milk Stage",
+        routine: "Maintain 5 cm water level. Spray Panchagavya 3% during grain filling stage. Spray Garlic-Chili kashayam if leaf folder pest appears."
+      },
+      {
+        phase: "Days 116 – 140",
+        title: "Drainage, Grain Hardening & Cutting",
+        routine: "Drain out standing field water 10 days before harvest. When 85% panicles turn golden yellow, cut crop 5 cm above ground level using traditional sickles or combined harvester. Sun-dry paddy for 3 days."
+      }
+    ],
+    organicProtocol: {
+      soilEnrichment: "Green Manuring with Dhaincha + Blue Green Algae (BGA) + Vermicompost.",
+      pestControl: "Neem Cake (400 kg/acre) + Pheromone traps (5/acre) + Light traps for stem borer moths.",
+      diseaseControl: "Pseudomonas fluorescens seed treatment & foliar spray.",
+      weedControl: "Cono-Weeder machine operation on Day 15 and Day 30 after transplanting.",
+      trapCrops: "Plant Sesbania on field bunds to harbor beneficial predator insects."
+    }
   },
   {
     id: "crop_wheat",
@@ -160,7 +228,41 @@ export const masterCrops = [
     difficulty: "Easy",
     marketPotential: "Stable Mandi Prices & Flour Mills",
     mainRisks: "Terminal heat stress near harvesting.",
-    farmingReq: "Line sowing with seed drill, crown root irrigation at 21 days."
+    farmingReq: "Line sowing with seed drill, crown root irrigation at 21 days.",
+    dailyTimeline: [
+      {
+        phase: "Days 1 – 10",
+        title: "Seed Treatment & Sowing",
+        routine: "Treat seeds with Azotobacter & PSB culture. Sow in rows 20cm apart at 5cm depth. Apply initial light presowing irrigation."
+      },
+      {
+        phase: "Days 11 – 30",
+        title: "Crown Root Initiation (CRI Stage)",
+        routine: "Provide 1st critical irrigation at Day 21 (CRI stage). Top dress 200kg Vermicompost per acre. Hand weed around rows."
+      },
+      {
+        phase: "Days 31 – 70",
+        title: "Jointing & Booting Stage",
+        routine: "Provide 2nd irrigation at Day 45 (Jointing) and 3rd at Day 65 (Booting). Spray Fermented Jeevamrutha. Inspect for rust fungal spots daily."
+      },
+      {
+        phase: "Days 71 – 100",
+        title: "Flowering & Grain Filling Stage",
+        routine: "Provide 4th irrigation at Day 85 (Milk stage). Spray Sour Curd 5% solution if yellow rust appears on leaves."
+      },
+      {
+        phase: "Days 101 – 130",
+        title: "Dough Stage, Ripening & Harvest Cutting",
+        routine: "Stop irrigation at Day 105. Allow straw and wheat ears to turn golden straw color. Harvest crop using sickles or reaper machine. Thresh and winnow grains."
+      }
+    ],
+    organicProtocol: {
+      soilEnrichment: "Azotobacter & PSB bio-fertilizers + Farmyard Manure.",
+      pestControl: "Neem Oil 5000 PPM spray for aphids + Yellow sticky cards.",
+      diseaseControl: "Trichoderma harzianum soil application against root rot & rust.",
+      weedControl: "Two hand weeding operations at 25 and 45 days after sowing.",
+      trapCrops: "Mustard border rows (1 row mustard for every 9 rows wheat)."
+    }
   },
   {
     id: "crop_cotton",
@@ -175,7 +277,41 @@ export const masterCrops = [
     difficulty: "Moderate to High",
     marketPotential: "Textile Mill Export Market",
     mainRisks: "Pink Bollworm attack & erratic monsoon rain.",
-    farmingReq: "Wide row spacing (3ft x 1.5ft), soil test-based NPK."
+    farmingReq: "Wide row spacing (3ft x 1.5ft), soil test-based NPK.",
+    dailyTimeline: [
+      {
+        phase: "Days 1 – 20",
+        title: "Land Digging & Sowing",
+        routine: "Dig deep furrows 3ft apart. Treat seeds with Trichoderma. Sow 2 seeds per hill. Water furrows lightly."
+      },
+      {
+        phase: "Days 21 – 60",
+        title: "Thinning & Branching Growth",
+        routine: "Thin to 1 plant per hill. Apply 300kg Organic Neem Cake per acre. Hand weed and earthing up soil around plant stem."
+      },
+      {
+        phase: "Days 61 – 110",
+        title: "Square Formation & Flowering",
+        routine: "Install 8 Pink Bollworm Pheromone traps per acre. Spray Dashparni Kashayam every 12 days to control sucking pests (jassids/thrips)."
+      },
+      {
+        phase: "Days 111 – 150",
+        title: "Boll Development & Bursting",
+        routine: "Spray Panchagavya 3% to enhance boll size. Irrigate at 10-12 day intervals. Monitor boll bursting daily."
+      },
+      {
+        phase: "Days 151 – 180",
+        title: "Cotton Picking & Harvest",
+        routine: "Pick clean fully opened white bolls manually in 3-4 pickings at 15-day intervals. Avoid dry leaf trash in picked cotton."
+      }
+    ],
+    organicProtocol: {
+      soilEnrichment: "VAM (Vesicular Arbuscular Mycorrhiza) + Vermicompost + Gypsum.",
+      pestControl: "Pink Bollworm Pheromone Traps + Agniastra spray + Neem seed kernel extract.",
+      diseaseControl: "Pseudomonas fluorescens + Copper sulfate organic lime mixture.",
+      weedControl: "Inter-cultivation with bullock hoe / mini tiller at 30 and 60 days.",
+      trapCrops: "Castor & Bhendi (Okra) border rows to trap bollworms."
+    }
   },
   {
     id: "crop_groundnut",
@@ -190,7 +326,41 @@ export const masterCrops = [
     difficulty: "Easy",
     marketPotential: "Oil Mills & Export Grade Kernels",
     mainRisks: "Tikka leaf spot & pod rotting in waterlogged soil.",
-    farmingReq: "Friable loose topsoil for easy peg penetration."
+    farmingReq: "Friable loose topsoil for easy peg penetration.",
+    dailyTimeline: [
+      {
+        phase: "Days 1 – 15",
+        title: "Seed Treatment & Line Sowing",
+        routine: "Treat kernels with Rhizobium leguminosarum & PSB bio-fertilizer. Sow seeds 30cm x 10cm apart in loose friable soil."
+      },
+      {
+        phase: "Days 16 – 40",
+        title: "Vegetative Growth & Flowering",
+        routine: "Apply Gypsum (200 kg/acre) around plants on Day 30 to strengthen pod shell formation. Hand weed gently without disturbing soil roots."
+      },
+      {
+        phase: "Days 41 – 75",
+        title: "Peg Penetration & Pod Formation",
+        routine: "CRITICAL STAGE: Do NOT disturb topsoil while pegs enter ground. Spray Jeevamrutha (200L/acre). Maintain light moisture."
+      },
+      {
+        phase: "Days 76 – 95",
+        title: "Pod Filling & Kernel Maturation",
+        routine: "Spray Sour Milk solution against Tikka leaf spot. Avoid waterlogging in field."
+      },
+      {
+        phase: "Days 96 – 115",
+        title: "Harvesting & Pod Digging",
+        routine: "Harvest when inside of pod shell turns dark brown. Irrigate lightly 2 days before harvest to loosen soil. Pull out plants manually, detach pods, and sun-dry pods for 5-7 days."
+      }
+    ],
+    organicProtocol: {
+      soilEnrichment: "Rhizobium Bio-fertilizer + Gypsum (200 kg/acre) + Compost.",
+      pestControl: "Neem Oil spray for red hairy caterpillar + Light traps.",
+      diseaseControl: "Trichoderma viride seed treatment for collar rot prevention.",
+      weedControl: "One hand weeding at 20 days (stop weeding before pegging stage).",
+      trapCrops: "Cowpea intercrop (1 row cowpea for every 6 rows groundnut)."
+    }
   }
 ];
 

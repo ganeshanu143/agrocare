@@ -12,6 +12,7 @@ import SoilDashboard from './components/SoilDashboard';
 import About from './components/About';
 import Footer from './components/Footer';
 import FarmerLogin from './components/FarmerLogin';
+import AgroChatbot from './components/AgroChatbot';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -107,6 +108,9 @@ export default function App() {
           <About lang={lang} />
         )}
       </main>
+
+      {/* 24/7 Farmer Doubts AI Chatbot */}
+      <AgroChatbot lang={lang} />
 
       {/* Login Modal for re-authentication if triggered */}
       {showAuthModal && (
