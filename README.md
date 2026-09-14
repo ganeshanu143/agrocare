@@ -1,1 +1,0 @@
-"# agrocare-smart-farming" 
